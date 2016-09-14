@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "197956918478",
+    "firebase_url": "https://primer-firebase.firebaseio.com",
+    "project_id": "primer-firebase",
+    "storage_bucket": "primer-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197956918478:android:3dcf6f5cfa4b3559",
+        "android_client_info": {
+          "package_name": "campitos.org.mensajeriafirebase2016"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197956918478-enj03vaemnae7eteatic58rhfri6u22d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCskiTTTj8NKj3Kg4kKpfORK4u86uhqZrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197956918478:android:fc3acde20b4c3b5a",
+        "android_client_info": {
+          "package_name": "firebase2.campitos.org.mensajeriafirebase20162"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197956918478-enj03vaemnae7eteatic58rhfri6u22d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCskiTTTj8NKj3Kg4kKpfORK4u86uhqZrk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

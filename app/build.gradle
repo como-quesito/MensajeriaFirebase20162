@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.1"
+
+    defaultConfig {
+        applicationId "firebase2.campitos.org.mensajeriafirebase20162"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/notice.txt'
+    }
+    lintOptions {
+        //
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.google.firebase:firebase-messaging:9.0.0'
+    compile 'org.springframework.android:spring-android-rest-template:2.0.0.M2'
+    compile 'org.springframework.android:spring-android-core:1.0.1.RELEASE'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.2'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-joda:2.6.0-rc1'
+/*
+LAS SIGUIENTE SON SUPER NECESARIAS YA QUE NO ES COMPATIBLE CON LAS VERSION DE om.android.support:appcompat-v7:24.2.0
+POR ESO HAY QUE HACER LOS FORZADORES DE ABAJO
+ */
+    configurations.all {
+        resolutionStrategy {
+            force 'com.android.support:design:23.4.0'
+            force 'com.android.support:support-v4:23.4.0'
+            force 'com.android.support:appcompat-v7:23.4.0'
+        }
+    }
+
+}
+apply plugin: 'com.google.gms.google-services'
